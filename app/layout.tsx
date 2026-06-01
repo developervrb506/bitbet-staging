@@ -1,56 +1,43 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Antonio, Inter } from "next/font/google";
+import { Sora, Montserrat } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-const antonio = Antonio({
-  variable: "--font-antonio",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
   display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
   subsets: ["latin"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "SportsBettingOnline — Bet Smarter, Win Bigger",
+  title: "Bitbet — The Best Crypto Casino",
   description:
-    "The premier online sportsbook. Bet on NFL, NBA, MLB, soccer, and more. Live odds, fast payouts, and player-focused sports betting.",
+    "The premier online crypto casino. Play blackjack, roulette, slots, and more with Bitcoin. Enjoy live odds, fast payouts, and a top-tier betting experience.",
   icons: {
-    icon: "/favIcon.png",
-    shortcut: "/favIcon.png",
-    apple: "/favIcon.png",
+    icon: "/bitbet.svg",
+    shortcut: "/bitbet.svg",
+    apple: "/bitbet.svg",
   },
   keywords: [
-    "sports betting",
-    "online sportsbook",
+    "crypto casino",
+    "bitcoin casino",
+    "online casino",
     "live betting",
-    "NFL betting",
-    "NBA betting",
-    "casino",
-    "racebook",
+    "slots",
+    "blackjack",
+    "roulette",
   ],
   openGraph: {
-    title: "SportsBettingOnline — Bet Smarter, Win Bigger",
-    description: "The premier online sportsbook. Live odds, fast payouts.",
+    title: "Bitbet — The Best Crypto Casino",
+    description: "The premier online crypto casino. Play with Bitcoin for fast payouts and a great betting experience.",
     type: "website",
   },
 };
@@ -63,14 +50,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${geistMono.variable} ${antonio.variable} ${inter.variable} h-full antialiased`}
+      className={`${sora.variable} ${montserrat.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white">
-        {/* Top header: logo + login form — sticky */}
+      <body >
         <Header />
+        <Navbar />
         <main className="flex-1">
-          {/* Nav strip overlays the hero below it */}
-          <Navbar />
+
           {children}
         </main>
         <Footer />

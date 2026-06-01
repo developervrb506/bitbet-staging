@@ -1,125 +1,37 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [mobileFormOpen, setMobileFormOpen] = useState(false);
-
   return (
-    <header className="sticky top-0 z-50 bg-[#0a0a0a] border-b border-white/5">
-      <div className="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-[1440px] mx-auto flex items-center justify-between h-[56px] gap-4">
+    <header className="sticky top-0 z-50 w-full bg-[#0A0A0B]/95 backdrop-blur-[5.12px]">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
+        <div className="flex h-[90px] items-center justify-between">
+          <div className="shrink-0">
+            <Image src="/bitbet.svg" alt="BitBet Logo" width={156} height={60} className="w-auto h-auto" priority unoptimized />
+          </div>
 
-          {/* ── Logo ── */}
-          <Link
-            href="/"
-            className="flex items-center gap-2.5 shrink-0"
-            aria-label="SportsBettingOnline home"
-          >
-            <Image
-              src="/logo.png"
-              alt="SportsBettingOnline"
-              width={160}
-              height={44}
-              className="h-10 w-auto object-contain"
-              priority
-              unoptimized
-            />
-          </Link>
-
-          {/* ── Desktop login form ── */}
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            className="hidden lg:flex items-center gap-2"
-            aria-label="Login"
-          >
+          <div className="flex items-center gap-1">
             <input
               type="text"
-              placeholder="User Name"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-              autoComplete="username"
-              className="w-40 xl:w-48 px-3 py-1.5 bg-[#1c1c1c] border border-white/15 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/30 transition-colors duration-150"
+              placeholder="Username"
+              className="w-[250px] font-sora h-[50px] rounded-[12px] bg-[rgba(255,255,255,0.07)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-none px-4 text-white placeholder-gray-300 focus:outline-none focus:ring-1 focus:ring-orange-500 text-sm font-medium"
             />
             <input
               type="password"
               placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              autoComplete="current-password"
-              className="w-40 xl:w-48 px-3 py-1.5 bg-[#1c1c1c] border border-white/15 rounded text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/30 transition-colors duration-150"
+              className="w-[250px] font-sora h-[50px] rounded-[12px] bg-[rgba(255,255,255,0.07)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] border-none px-4 text-white placeholder-gray-300 focus:outline-none focus:ring-1 focus:ring-orange-500 text-sm font-medium"
             />
-
-            {/* Login — red */}
-            <button
-              type="submit"
-              className="px-5 py-1.5 bg-[#FB411C] hover:bg-[#c62828] text-white text-sm tracking-wide rounded transition-colors duration-150 whitespace-nowrap"
-            >
-              Login
+            <div className="flex gap-x-5"> <button className="w-[114px] h-[50px] rounded-[12px] bg-linear-to-b from-[#D0D3D4] to-[#888B8E] text-white font-montserrat font-bold  shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:brightness-110 transition-all">
+              LOGIN
             </button>
-
-            {/* Cashier — green */}
-            <button
-              type="button"
-              className="px-5 py-1.5 bg-[#00A90B] hover:bg-[#1b5e20] text-white text-sm tracking-wide rounded transition-colors duration-150 whitespace-nowrap"
-            >
-              Cashier
-            </button>
-          </form>
-
-          {/* ── Mobile toggle ── */}
-          <button
-            onClick={() => setMobileFormOpen((v) => !v)}
-            aria-label="Toggle login"
-            aria-expanded={mobileFormOpen}
-            className="lg:hidden flex items-center gap-1.5 px-3 py-1.5 bg-[#e53935] hover:bg-[#c62828] text-white text-xs font-bold uppercase tracking-wide rounded-sm transition-colors duration-150"
-          >
-            Login
-          </button>
-        </div>
-      </div>
-
-      {/* ── Mobile login dropdown ── */}
-      {mobileFormOpen && (
-        <div className="lg:hidden border-t border-white/5 bg-[#0f0f0f] px-4 py-4">
-          <form
-            onSubmit={(e) => e.preventDefault()}
-            className="flex flex-col gap-2.5 max-w-sm mx-auto"
-            aria-label="Mobile login"
-          >
-            <input
-              type="text"
-              placeholder="User Name"
-              autoComplete="username"
-              className="w-full px-3 py-2 bg-[#1c1c1c] border border-white/15 rounded-sm text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/30 transition-colors"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              autoComplete="current-password"
-              className="w-full px-3 py-2 bg-[#1c1c1c] border border-white/15 rounded-sm text-sm text-white placeholder-gray-500 focus:outline-none focus:border-white/30 transition-colors"
-            />
-            <div className="flex gap-2">
-              <button
-                type="submit"
-                className="flex-1 py-2 bg-[#e53935] hover:bg-[#c62828] text-white text-sm font-bold uppercase tracking-wide rounded-sm transition-colors"
-              >
-                Login
-              </button>
-              <button
-                type="button"
-                className="flex-1 py-2 bg-[#2e7d32] hover:bg-[#1b5e20] text-white text-sm font-bold uppercase tracking-wide rounded-sm transition-colors"
-              >
-                Cashier
+              <button className="px-8 h-[50px] rounded-[12px] bg-linear-to-b from-[#F58728] to-[#E25C08] text-white font-montserrat font-bold  shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] hover:brightness-110 transition-all">
+                JOIN NOW
               </button>
             </div>
-          </form>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

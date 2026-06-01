@@ -1,23 +1,44 @@
-import Hero from "@/components/home/Hero";
-import AboutSection from "@/components/home/AboutSection";
-import PlayerFocusedBanner from "@/components/home/PlayerFocusedBanner";
-import FeaturesSection from "@/components/home/FeaturesSection";
-import BettingTypesSection from "@/components/home/BettingTypesSection";
-import PromotionsSection from "@/components/home/PromotionsSection";
-import WhyUsSection from "@/components/home/WhyUsSection";
-import CtaSection from "@/components/home/CtaSection";
+
+import Hero from '@/components/Hero';
+import PlaySections from '@/components/PlaySections';
+import InfoSection from '@/components/InfoSection';
 
 export default function HomePage() {
   return (
-    <>
-      <Hero />
-      <AboutSection />
-      <PlayerFocusedBanner />
-      <FeaturesSection />
-      <BettingTypesSection />
-      {/* <PromotionsSection /> */}
-      <WhyUsSection />
-      {/* <CtaSection /> */}
-    </>
+    <main className="relative w-full bg-black overflow-hidden">
+      {/* Left Blur */}
+      <div 
+        className="pointer-events-none absolute z-0"
+        style={{
+          width: '151.69px',
+          height: '883.27px',
+          left: '-247px',
+          top: '1135px',
+          background: '#EB6331',
+          filter: 'blur(175px)',
+          transform: 'matrix(-0.77, 0.64, 0.64, 0.77, 0, 0)'
+        }}
+      />
+      
+      {/* Right Blur */}
+      <div 
+        className="pointer-events-none absolute z-0"
+        style={{
+          width: '151.69px',
+          height: '883.27px',
+          left: '1535px',
+          top: '2167px',
+          background: '#EB6331',
+          filter: 'blur(175px)',
+          transform: 'rotate(39.62deg)'
+        }}
+      />
+
+      <div className="relative z-10">
+        <Hero />
+        <PlaySections />
+        <InfoSection />
+      </div>
+    </main>
   );
 }
