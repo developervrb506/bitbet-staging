@@ -35,7 +35,11 @@ export default function HomePage() {
       />
 
       <div className="relative z-10">
-        <Hero />
+        <Hero 
+          title={<>Lorem ipsum dolor <br className="hidden md:block" /> amet consectetur.</>}
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris sit amet nisl interdum vestibulum iaculis mattis arcu. Cras imperdiet ipsum at metus varius"
+          buttonText="Join Now"
+        />
         <PlaySections />
         <InfoSection />
       </div>

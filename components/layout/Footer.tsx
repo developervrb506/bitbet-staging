@@ -51,6 +51,7 @@ export default function Footer() {
                 width={156}
                 height={60}
                 className="w-auto h-auto"
+                style={{ width: 'auto', height: 'auto' }}
                 unoptimized
               />
             </Link>
@@ -110,7 +111,7 @@ export default function Footer() {
                 aria-label={social.label}
                 className="w-12 h-12 rounded-full bg-[#EB6331] flex items-center justify-center  p-4 transition-colors"
               >
-                <Image src={social.icon} alt={social.label} width={16} height={16} className="w-auto h-auto" />
+                <Image src={social.icon} alt={social.label} width={16} height={16} className="w-auto h-auto" style={{ width: 'auto', height: 'auto' }} />
               </a>
             ))}
           </div>
