@@ -23,7 +23,7 @@ const howItWorksCards = [
 export default function ProvabilitySections() {
   return (
     <>
-      <section className="relative w-full bg-black py-16 md:py-24 text-white overflow-hidden md:overflow-visible">
+      <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
         {/* Background Gradient */}
         <div className="absolute bottom-0 left-0 w-full h-[500px] bg-linear-to-b from-[#EB6331]/0 to-[#EB6331] opacity-10 pointer-events-none z-0" />
         <DecorativeEllipse left="-247px" top="10%" />

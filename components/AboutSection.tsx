@@ -15,12 +15,13 @@ export default function AboutSection() {
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20 mb-20 lg:mb-32">
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-            <div className="relative w-full aspect-4/5">
+            <div className="relative w-full ">
               <Image
                 src="/aboutcombo.png"
                 alt="Casino players and games"
                 fill
-                className="object-contain"
+                className="relative!"
+                // className="object-contain"
               />
             </div>
           </div>

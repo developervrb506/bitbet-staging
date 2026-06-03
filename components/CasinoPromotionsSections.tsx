@@ -5,7 +5,7 @@ import ImageTextSection from "./ImageTextSection";
 
 export default function CasinoPromotionsSections() {
   return (
-    <section className="relative w-full  py-20 lg:py-32 overflow-hidden bg-black">
+    <section className="relative w-full  py-20 lg:py-36 overflow-hidden bg-black">
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8  space-y-24">
         <DecorativeEllipse left="-247px" top="10%" />
 
@@ -46,17 +46,17 @@ export default function CasinoPromotionsSections() {
         {/* General Rules Section */}
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-            <div className="relative w-full aspect-4/5">
+            <div className=" w-full ">
               <Image
                 src="/aboutcombo.png"
                 alt="Casino players and games"
                 fill
-                className="object-contain"
+                className="relative!"
               />
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 pt-4">
+          <div className="w-full lg:w-1/2 py-32">
             <h3 className="text-[26px] font-bold text-white font-sora mb-8">
               General Rules:
             </h3>
@@ -158,12 +158,12 @@ export default function CasinoPromotionsSections() {
             {/* Top part */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className="relative w-full  aspect-square">
+                <div className=" w-full  ">
                   <Image
                     src="/gambling.png"
                     alt="Gambling Promotions"
                     fill
-                    className="object-contain"
+                    className="relative!"
                   />
                 </div>
               </div>
@@ -232,12 +232,12 @@ export default function CasinoPromotionsSections() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className="relative w-full  aspect-square">
+                <div className="w-full">
                   <Image
                     src="/sevenpoker.png"
                     alt="Casino Poker and Slots"
                     fill
-                    className="object-contain"
+                    className="relative!"
                   />
                 </div>
               </div>
@@ -246,12 +246,12 @@ export default function CasinoPromotionsSections() {
             {/* Bottom part */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className="relative w-full aspect-square">
+                <div className="w-full">
                   <Image
                     src="/wheel.png"
                     alt="Casino Wheel"
                     fill
-                    className="object-contain"
+                    className="relative!"
                   />
                 </div>
               </div>
@@ -289,9 +289,8 @@ export default function CasinoPromotionsSections() {
           </div>
         </div>
 
-        {/* Claiming Your Gambling Promotions Section */}
         <div className="pb-12 lg:pb-24">
-          <div className="bg-[#EB6331] rounded-l-full rounded-tr-[40px] p-6 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+          <div className="bg-[#EB6331] rounded-l-[180px] rounded-tr-[20px] rounded-br-[20px] p-6 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
             <div className="relative w-[200px] h-[200px] lg:w-[320px] lg:h-[320px] rounded-full bg-[#D9D9D9] p-7 shrink-0 flex items-center justify-center">
               <div className="relative h-full w-full">
                 <Image
@@ -319,7 +318,7 @@ export default function CasinoPromotionsSections() {
         </div>
 
         {/* Bet Promos Terms Section */}
-        <div className="py-12 pb-24">
+        <div>
           <ImageTextSection
             title={
               <>

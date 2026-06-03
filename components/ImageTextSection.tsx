@@ -23,14 +23,15 @@ export default function ImageTextSection({
           imagePosition === "right" ? "md:flex-row-reverse" : "md:flex-row"
         }`}
       >
-        <div className="w-full md:w-1/2 relative h-[400px] md:h-[600px] overflow-hidden">
+        <div className="w-full md:w-1/2  overflow-hidden">
           <Image
             src={imageSrc}
             alt={imageAlt}
             fill
-            className={`object-contain ${
-              imagePosition === "right" ? "md:object-right" : "md:object-left"
-            }`}
+            // className={`object-contain ${
+            //   imagePosition === "right" ? "md:object-right" : "md:object-left"
+            // }`}
+            className="relative!"
           />
         </div>
         <div className="w-full md:w-1/2 flex flex-col gap-6 text-white/80 font-sora text-sm md:text-base leading-relaxed">

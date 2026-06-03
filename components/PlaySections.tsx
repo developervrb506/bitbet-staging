@@ -31,10 +31,8 @@ const timeToPlayImages = [
 /* Rectangle 2 */
 export default function PlaySections() {
   return (
-    <section className="relative w-full py-16 md:py-24 overflow-hidden">
+    <section className="relative w-full py-16 md:py-32 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-
-
         <div className=" mb-20">
           <h2 className="text-[46px] font-bold text-white mb-7 text-center font-sora tracking-wide">
             Play For Fun
@@ -71,14 +69,16 @@ export default function PlaySections() {
           </div>
 
           {/* View More Button */}
-          <div className="text-center mt-10"> <button className="text-white bg-linear-to-b from-[#F39120] to-[#EB6331] rounded-[12px] py-3.5 px-7 font-montserrat font-bold ">
-            View More
-          </button></div>
+          <div className="text-center mt-10">
+            {" "}
+            <button className="text-white bg-linear-to-b from-[#F39120] to-[#EB6331] rounded-[12px] py-3.5 px-7 font-montserrat font-bold ">
+              View More
+            </button>
+          </div>
         </div>
 
         <div className="w-full  mt-8 border-l border-white pl-6 md:pl-10">
           <div className="flex items-center gap-3 mb-10">
-
             <h2 className="text-[46px] font-bold text-white font-sora tracking-wide">
               It&apos;s Time to Play
             </h2>
@@ -99,12 +99,10 @@ export default function PlaySections() {
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-w-768px) 100vw, 33vw"
                 />
-
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

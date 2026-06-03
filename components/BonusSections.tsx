@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function BonusSections() {
   return (
-    <section className="relative w-full bg-black py-16 md:py-24 text-white overflow-hidden md:overflow-visible">
+    <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
       {/* Background Gradient Ellipse 7 */}
       <div
         className="absolute w-[151.69px] h-[883.27px] left-[-200px] top-0 bg-[#EB6331] blur-[175px] pointer-events-none z-0"
@@ -44,12 +44,12 @@ export default function BonusSections() {
               </p>
             </div>
           </div>
-          <div className="w-full relative aspect-2.5/1 md:aspect-3/1">
+          <div className="w-full relative">
             <Image
               src="/onlinecasino.png"
               alt="Online Casino"
               fill
-              className="object-contain md:object-cover rounded-[40px] md:rounded-[100px]"
+              className="relative! rounded-[40px] md:rounded-[100px]"
             />
           </div>
         </div>
@@ -81,12 +81,13 @@ export default function BonusSections() {
               ))}
             </ul>
           </div>
-          <div className="w-full relative h-[300px] md:h-[450px]">
+          <div className="w-full ">
             <Image
               src="/bonusexamples.png"
               alt="Bonus Examples"
+              className="relative!"
               fill
-              className="object-contain object-center md:object-right"
+              // className="object-contain object-center md:object-right"
             />
           </div>
         </div>
@@ -129,12 +130,13 @@ export default function BonusSections() {
               accounts.
             </p>
           </div>
-          <div className="w-full md:w-1/2 relative h-[300px] md:h-[450px]">
+          <div className="w-full md:w-1/2 ">
             <Image
               src="/contribution.png"
               alt="Wagering Contribution"
               fill
-              className="object-contain object-center md:object-left"
+              className="relative!"
+              // className="object-contain object-center md:object-left"
             />
           </div>
         </div>

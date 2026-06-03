@@ -12,7 +12,7 @@ export default function CryptosPage() {
           title="Cryptos"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris sit amet nisi interdum vestibulum iaculis mattis arcu. Cras imperdiet ipsum at metus varius"
         />
-        <section className="relative w-full bg-black py-16 md:py-24 text-white overflow-hidden md:overflow-visible">
+        <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
           <DecorativeEllipse left="-247px" top="10%" />
           <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 relative z-10">
             <ImageTextSection
