@@ -18,15 +18,7 @@ export default function CryptosPage() {
             <ImageTextSection
               imageSrc="/provability.png"
               imageAlt="Accepted crypto casino currencies at Bitbet.com"
-              title={
-                <>
-                  Accepted crypto
-                  <br />
-                  casino currencies at
-                  <br />
-                  Bitbet.com
-                </>
-              }
+              title={<>Accepted crypto casino currencies at Bitbet.com</>}
               paragraphs={[
                 "The crypto betting currencies below are all accepted at bitbet.com. When you send any of the currencies including BTC your money will be converted to microbitcoin (MBT) which is 1/10 of a bitcoin at the current market value. You can choose to convert your money back to any of the currencies below on your payout as well after you win.",
                 "Bitbet.com accepts all of the betting crypto currencies listed below. When you fund with any of the crypto currencies listed below (including BTC) will be converted to USD at the current market value. Once you win at the casino, you have the option of changing your funds back into any of the currencies listed below to cash out your money.",

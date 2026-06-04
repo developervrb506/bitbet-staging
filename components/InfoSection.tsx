@@ -8,8 +8,8 @@ export default function InfoSection() {
       <div className="absolute left-[-20%] top-[60%] -translate-y-1/2 w-[500px] h-[500px] bg-[#EB6331] blur-[250px] transform-[matrix(1,0,0,-1,0,0)] rounded-full pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="mb-40">
-          <h2 className="text-[32px] md:text-[46px] font-bold text-white text-center font-sora leading-tight tracking-wide max-w-[1000px] mx-auto mb-12">
+        <div className="mb-20 md:mb-40">
+          <h2 className="text-3xl md:text-[46px] font-bold text-white text-center font-sora leading-tight tracking-wide max-w-[1000px] mx-auto mb-12">
             Place Your Online Bitcoin{" "}
             <span className="inline-block align-middle mx-2">
               <Image
@@ -27,7 +27,7 @@ export default function InfoSection() {
             The Best CryptoCasino
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-16 text-white/80 text-[14px] md:text-[16px] font-sora leading-relaxed">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-16 text-white/80 text-sm md:text-base font-sora leading-relaxed">
             <div className="space-y-6">
               <p>
                 Bitbet focuses on user-friendly casino entertainment experience
@@ -76,11 +76,9 @@ export default function InfoSection() {
         {/* Bottom Section */}
         <div className="flex flex-col lg:flex-row  items-center gap-16 lg:gap-32">
           {/* Left Text */}
-          <div className="flex-1 space-y-10 text-white/70 text-[14px] md:text-[16px] font-sorA leading-relaxed">
-            <h3 className="text-[28px] md:text-[46px] font-bold text-white font-sora leading-tight mb-6">
-              Bitcoin Casinos are
-              <br />
-              highly secure
+          <div className="flex-1 space-y-10 text-white/70 text-sm md:text-base font-sora leading-relaxed">
+            <h3 className="text-3xl md:text-[46px] font-bold text-white font-sora leading-tight mb-6 max-w-full lg:max-w-[479px]">
+              Bitcoin Casinos are highly secure
             </h3>
             <p>
               The confidentiality and anonymity of transacting with digital

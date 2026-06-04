@@ -3,7 +3,9 @@ import { Sora, Montserrat } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import FloatingNav from "@/components/layout/FloatingNav";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const sora = Sora({
   variable: "--font-sora",
@@ -37,7 +39,8 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Bitbet — The Best Crypto Casino",
-    description: "The premier online crypto casino. Play with Bitcoin for fast payouts and a great betting experience.",
+    description:
+      "The premier online crypto casino. Play with Bitcoin for fast payouts and a great betting experience.",
     type: "website",
   },
 };
@@ -53,14 +56,13 @@ export default function RootLayout({
       className={`${sora.variable} ${montserrat.variable} h-full antialiased`}
       data-scroll-behavior="smooth"
     >
-      <body >
+      <body>
+        <ScrollToTop />
         <Header />
         <Navbar />
-        <main className="flex-1">
-
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
         <Footer />
+        <FloatingNav />
       </body>
     </html>
   );

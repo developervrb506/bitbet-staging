@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
+export const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Bonus", href: "/bonus" },
@@ -19,7 +19,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="sticky top-[90px] z-40 bg-black">
+    <nav className="hidden lg:block sticky top-[90px] z-40 bg-black">
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className="flex h-[45px] items-center justify-between gap-x-6 lg:gap-x-8 overflow-x-auto no-scrollbar">
           {navLinks.map((link) => {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CheckmarkListItem from "./CheckmarkListItem";
 
 export default function BonusSections() {
   return (
@@ -12,17 +13,13 @@ export default function BonusSections() {
       <div className=" mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8  space-y-24 md:space-y-32 relative z-10">
         {/* Section 1: Online Casino Terms */}
         <div className="flex flex-col items-center">
-          <div className="flex flex-col md:flex-row gap-8 md:gap-16 w-full mb-16">
-            <div className="w-full md:w-1/2">
-              <h2 className="text-3xl md:text-[46px] font-bold font-sora leading-14">
-                Online Casino
-                <br />
-                Bonus Terms and
-                <br />
-                Conditions:
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full mb-16">
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-3xl md:text-[46px] font-bold font-sora leading-10 md:leading-14 max-w-full lg:max-w-[420px]">
+                Online Casino Bonus Terms and Conditions:
               </h2>
             </div>
-            <div className="w-full md:w-1/2 flex flex-col gap-6 text-gray-300 font-sora text-sm md:text-base leading-relaxed">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-gray-300 font-sora text-sm md:text-base leading-relaxed">
               <p>
                 All bonuses must be claimed upon deposit and before the deposit
                 money starts being used. The casino deposit bonus amount will be
@@ -67,17 +64,9 @@ export default function BonusSections() {
                 "Deposit $100 and get a $200 Bonus",
                 "Deposit $500 or more and get a $1,000 Bonus",
               ].map((item, idx) => (
-                <li key={idx} className="flex items-center gap-4">
-                  <Image
-                    src="/bonuscheckmark.svg"
-                    alt="Check"
-                    width={24}
-                    height={24}
-                    className="shrink-0"
-                    style={{ width: "auto", height: "auto" }}
-                  />
+                <CheckmarkListItem key={idx} align="center">
                   <span>{item}</span>
-                </li>
+                </CheckmarkListItem>
               ))}
             </ul>
           </div>
@@ -93,12 +82,10 @@ export default function BonusSections() {
         </div>
 
         {/* Section 3: Contribution */}
-        <div className="flex flex-col md:flex-row-reverse gap-12 md:gap-16 items-center w-full">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl md:text-[30px] font-bold font-sora mb-8 leading-tight">
-              Different Games account for
-              <br />
-              different wagering contribution.
+        <div className="flex flex-col lg:flex-row-reverse gap-12 lg:gap-16 items-center w-full">
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-2xl md:text-[30px] font-bold font-sora mb-8 leading-tight max-w-fulllg:max-w-[545px]">
+              Different Games account for different wagering contribution.
             </h2>
             <ul className="space-y-5 font-sora text-white/80 text-sm md:text-base mb-8">
               {[
@@ -107,20 +94,12 @@ export default function BonusSections() {
                 "10% Video Poker",
                 "Any other casino games played will not count towards wagering requirements.",
               ].map((item, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <Image
-                    src="/bonuscheckmark.svg"
-                    alt="Check"
-                    width={24}
-                    height={24}
-                    className="shrink-0 mt-0.5"
-                    style={{ width: "auto", height: "auto" }}
-                  />
+                <CheckmarkListItem key={idx} align="start">
                   <span className="max-w-[90%] leading-relaxed">{item}</span>
-                </li>
+                </CheckmarkListItem>
               ))}
             </ul>
-            <p className="text-white/80 font-sora text-xs md:text-base leading-6">
+            <p className="text-white/80 font-sora text-sm md:text-base leading-6">
               Must be 18+ and located in accepted territories to qualify.
               Bonuses are available for recreational players only and subject to
               management discretion. We reserve the right to modify bonuses at
@@ -130,13 +109,12 @@ export default function BonusSections() {
               accounts.
             </p>
           </div>
-          <div className="w-full md:w-1/2 ">
+          <div className="w-full lg:w-1/2 ">
             <Image
               src="/contribution.png"
               alt="Wagering Contribution"
               fill
               className="relative!"
-              // className="object-contain object-center md:object-left"
             />
           </div>
         </div>

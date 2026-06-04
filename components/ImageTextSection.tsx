@@ -19,11 +19,11 @@ export default function ImageTextSection({
   return (
     <div className="flex flex-col items-center">
       <div
-        className={`flex flex-col gap-8 md:gap-16 w-full items-center ${
-          imagePosition === "right" ? "md:flex-row-reverse" : "md:flex-row"
+        className={`flex flex-col gap-8 lg:gap-16 w-full items-center ${
+          imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >
-        <div className="w-full md:w-1/2  overflow-hidden">
+        <div className="w-full lg:w-1/2  overflow-hidden">
           <Image
             src={imageSrc}
             alt={imageAlt}
@@ -34,8 +34,8 @@ export default function ImageTextSection({
             className="relative!"
           />
         </div>
-        <div className="w-full md:w-1/2 flex flex-col gap-6 text-white/80 font-sora text-sm md:text-base leading-relaxed">
-          <h2 className="text-3xl md:text-[46px] font-bold font-sora leading-tight text-white mb-4">
+        <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/80 font-sora text-sm md:text-base leading-relaxed">
+          <h2 className="text-3xl lg:text-[46px] font-bold font-sora leading-tight text-white mb-4 max-w-full lg:max-w-[545px]">
             {title}
           </h2>
           {paragraphs.map((paragraph, index) => (

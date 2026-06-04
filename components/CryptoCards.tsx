@@ -76,11 +76,11 @@ const cryptoData = [
 
 export default function CryptoCards() {
   return (
-    <div className="flex flex-col gap-6 md:gap-8 max-w-[1440px]  mt-16 md:mt-60">
+    <div className="flex flex-col gap-6 md:gap-8 max-w-[1440px]  mt-16 md:mt-30">
       {cryptoData.map((crypto, index) => (
         <div
           key={index}
-          className="flex flex-col md:flex-row gap-6 md:gap-8 p-2.5 rounded-[30px] "
+          className="flex flex-col lg:flex-row gap-6 lg:gap-8 p-2.5 rounded-[30px] "
           style={{
             background:
               "radial-gradient(50% 100% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%)",
@@ -88,7 +88,7 @@ export default function CryptoCards() {
           }}
         >
           {/* Icon Container */}
-          <div className="w-full md:w-[240px] h-[290px] shrink-0 bg-black rounded-[30px] flex items-center justify-center p-8 border border-white/5">
+          <div className="w-full lg:w-[240px] h-[200px] lg:h-[290px] shrink-0 bg-black rounded-[30px] flex items-center justify-center p-8 border border-white/5">
             <div className="relative w-full h-full">
               <Image
                 src={crypto.icon}
@@ -100,7 +100,7 @@ export default function CryptoCards() {
           </div>
 
           {/* Content Container */}
-          <div className="flex flex-col justify-between py-10 grow">
+          <div className="flex flex-col justify-between px-5 lg:px-0 py-5 lg:py-10 grow">
             <div>
               {" "}
               <h3 className="text-white text-xl md:text-2xl font-bold font-sora mb-3">

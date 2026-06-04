@@ -28,9 +28,9 @@ export default function Hero({
         />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 h-full flex items-center">
+      <div className="relative z-10 mx-auto  max-w-[1440px] px-4 sm:px-6 lg:px-8 h-full flex items-center">
         <div className="max-w-2xl text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight  font-sora">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight  font-sora max-w-[505px]">
             {title}
           </h1>
           {description && (

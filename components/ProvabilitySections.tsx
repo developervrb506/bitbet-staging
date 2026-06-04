@@ -32,15 +32,7 @@ export default function ProvabilitySections() {
           <ImageTextSection
             imageSrc="/provability.png"
             imageAlt="Provable Fairness Explanation"
-            title={
-              <>
-                Online Casino
-                <br />
-                Software Provable
-                <br />
-                Fairness - Explanation
-              </>
-            }
+            title={<>Online Casino Software Provable Fairness - Explanation</>}
             paragraphs={[
               "Provable fairness was created to address the lack of transparency that exists within online casino software. It creates the ability to give assurance to the player that the result matches a complex random number generator.",
               "Often, casino software providers lack transparency and do not show proof that their gambling games will payout the correct amount based on the casino set hold%. Online casino software providers in the market will often pay other websites to announce they are provably fair rather than allowing the player to ensure it on their own while they play.",

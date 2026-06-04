@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import DecorativeEllipse from "./DecorativeEllipse";
 import ImageTextSection from "./ImageTextSection";
+import CheckmarkListItem from "./CheckmarkListItem";
 
 export default function CasinoPromotionsSections() {
   return (
@@ -18,15 +19,11 @@ export default function CasinoPromotionsSections() {
             backdropFilter: "blur(11.2993px)",
           }}
         >
-          <h2 className="text-3xl lg:text-5xl font-bold text-white font-sora  leading-tight">
-            NFL Weekly Casino
-            <br />
-            Blackjack
-            <br />
-            Tournament
+          <h2 className="text-3xl lg:text-5xl font-bold text-white font-sora  leading-tight max-w-[480px]">
+            NFL Weekly Casino Blackjack Tournament
           </h2>
 
-          <div className="flex flex-col gap-5 w-full max-w-[360px]">
+          <div className="flex flex-col gap-5 w-full lg:max-w-[360px]">
             <input
               type="text"
               placeholder="Username"
@@ -56,7 +53,7 @@ export default function CasinoPromotionsSections() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 py-32">
+          <div className="w-full lg:w-1/2 py-10 md:py-32">
             <h3 className="text-[26px] font-bold text-white font-sora mb-8">
               General Rules:
             </h3>
@@ -70,19 +67,11 @@ export default function CasinoPromotionsSections() {
                 "Collect as many cards of each player during the week as possible during the NFL season.",
                 "Collected Cards will be shown in the 'Contest' link on the top menu of the blackjack game.",
               ].map((rule, idx) => (
-                <li key={idx} className="flex items-start gap-4">
-                  <div className="relative w-6 h-6 shrink-0 mt-0.5">
-                    <Image
-                      src="/bonuscheckmark.svg"
-                      alt="Checkmark"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
+                <CheckmarkListItem key={idx} align="start">
                   <p className="text-white/80 font-sora text-base leading-relaxed">
                     {rule}
                   </p>
-                </li>
+                </CheckmarkListItem>
               ))}
             </ul>
           </div>
@@ -138,20 +127,18 @@ export default function CasinoPromotionsSections() {
           </div>
 
           <div className="text-center">
-            <p className="text-white/80 font-sora text-sm leading-relaxed">
+            <p className="text-white/80 font-sora text-sm leading-relaxed max-w-[616px]">
               The total amount credited to your account will be $500 w/ NO
-              ROLLOVER.
-              <br />
-              Credit players are not eligible for this contest without prior
-              approval from your agent.
+              ROLLOVER. Credit players are not eligible for this contest without
+              prior approval from your agent.
             </p>
           </div>
         </div>
 
         {/* Online Gambling Promotions Section */}
-        <div className="flex flex-col pt-24 pb-12">
+        <div className="flex flex-col pt-0 md:pt-24 pb-12">
           <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-16 text-center leading-tight">
-            Online gambling <br /> promotions at bitbet.com
+            Online gambling promotions at bitbet.com
           </h2>
 
           <div className="flex flex-col gap-24">
@@ -168,7 +155,7 @@ export default function CasinoPromotionsSections() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2">
-                <div className="space-y-6 text-white/80 font-sora text-sm leading-relaxed">
+                <div className="space-y-6 text-white/80 font-sora text-base leading-relaxed">
                   <p>
                     Prepare to embark on an exhilarating journey through a realm
                     of unbeatable excitement and unparalleled rewards. Our
@@ -200,7 +187,7 @@ export default function CasinoPromotionsSections() {
             {/* Middle part */}
             <div className="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-1/2">
-                <div className="space-y-6 text-white/80 font-sora text-sm leading-7">
+                <div className="space-y-6 text-white/80 font-sora text-base leading-7">
                   <p>
                     Welcome Bonus Package: Begin your journey with a bang! New
                     players are greeted with a generous welcome bonus that
@@ -256,7 +243,7 @@ export default function CasinoPromotionsSections() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2">
-                <div className="space-y-6 text-white/80 font-sora text-sm leading-7">
+                <div className="space-y-6 text-white/80 font-sora text-base leading-7">
                   <p>
                     Tournaments and Leaderboards: Compete against fellow players
                     in thrilling tournaments and climb the leaderboards for a
@@ -290,21 +277,20 @@ export default function CasinoPromotionsSections() {
         </div>
 
         <div className="pb-12 lg:pb-24">
-          <div className="bg-[#EB6331] rounded-l-[180px] rounded-tr-[20px] rounded-br-[20px] p-6 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16">
+          <div className="bg-[#EB6331] rounded-[32px] lg:rounded-l-[180px] lg:rounded-tr-[20px] lg:rounded-br-[20px] p-8 md:p-12 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-28">
             <div className="relative w-[200px] h-[200px] lg:w-[320px] lg:h-[320px] rounded-full bg-[#D9D9D9] p-7 shrink-0 flex items-center justify-center">
               <div className="relative h-full w-full">
                 <Image
                   src="/bitcoin.svg"
                   alt="Bitcoin"
                   fill
-                  className="object-contain drop-shadow-2xl w-[286px] h-[286px]"
+                  className="object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
             <div className="flex-1 text-center lg:text-left py-4 lg:py-0">
-              <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-6 leading-tight">
-                Claiming Your Gambling <br className="hidden lg:block" />{" "}
-                Promotions
+              <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-6 leading-tight max-w-[600px]">
+                Claiming Your Gambling Promotions
               </h2>
               <p className="text-white/90 font-sora text-sm lg:text-[15px] leading-relaxed max-w-[700px]">
                 Claiming these promotions is easy! Simply log in to your
@@ -320,13 +306,7 @@ export default function CasinoPromotionsSections() {
         {/* Bet Promos Terms Section */}
         <div>
           <ImageTextSection
-            title={
-              <>
-                Bet Promos Terms
-                <br />
-                and Conditions Apply
-              </>
-            }
+            title={<>Bet Promos Terms and Conditions Apply</>}
             paragraphs={[
               "Please be aware that all promotions come with specific terms and conditions. These may include wagering requirements, minimum deposit amounts, and expiration dates. It's important to read and understand these terms before participating in any gambling promotion.",
               <React.Fragment key="2">

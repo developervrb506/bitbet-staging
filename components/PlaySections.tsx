@@ -61,7 +61,7 @@ export default function PlaySections() {
                 </div>
 
                 {/* Game Title */}
-                <h3 className="my-7 text-center font-bold text-white text-[20px]font-semibold font-sora leading-tight tracking-wide px-2 min-h-[36px] flex items-center justify-center">
+                <h3 className="my-4 lg:my-7 text-center font-bold text-white text-[20px]font-semibold font-sora leading-tight tracking-wide px-0 lg:px-2 min-h-[36px] flex items-center justify-center">
                   {game.name}
                 </h3>
               </div>
@@ -79,7 +79,7 @@ export default function PlaySections() {
 
         <div className="w-full  mt-8 border-l border-white pl-6 md:pl-10">
           <div className="flex items-center gap-3 mb-10">
-            <h2 className="text-[46px] font-bold text-white font-sora tracking-wide">
+            <h2 className="text-3xl md:text-[46px] font-bold text-white font-sora tracking-wide">
               It&apos;s Time to Play
             </h2>
           </div>

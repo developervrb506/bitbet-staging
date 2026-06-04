@@ -1,6 +1,7 @@
 import ImageTextSection from "./ImageTextSection";
 import DecorativeEllipse from "./DecorativeEllipse";
 import Image from "next/image";
+import CheckmarkListItem from "./CheckmarkListItem";
 
 const timelineSteps = [
   {
@@ -83,12 +84,8 @@ export default function HowToBuyBitcoinSections() {
 
             {/* Right Text */}
             <div className="flex-1 w-full">
-              <h2 className="text-3xl md:text-[46px] font-bold text-white font-sora leading-tight mb-10">
-                Benefits of Using
-                <br />
-                Bitcoin in Online
-                <br />
-                Casinos
+              <h2 className="text-3xl max-w-[534px] md:text-[46px] font-bold text-white font-sora leading-tight mb-10">
+                Benefits of Using Bitcoin in Online Casinos
               </h2>
 
               <ul className="space-y-8">
@@ -110,21 +107,14 @@ export default function HowToBuyBitcoinSections() {
                     desc: "Bitcoin is accessible to anyone with an internet connection, bridging gaps created by banking restrictions in certain regions.",
                   },
                 ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-4">
-                    <Image
-                      src="/bonuscheckmark.svg"
-                      alt="Check"
-                      width={24}
-                      height={24}
-                      className="shrink-0 mt-1"
-                    />
+                  <CheckmarkListItem key={idx} align="start">
                     <p className="text-white font-sora text-base leading-relaxed">
                       <span className="text-[#EB6331] font-bold mr-1">
                         {item.title}
                       </span>
                       {item.desc}
                     </p>
-                  </li>
+                  </CheckmarkListItem>
                 ))}
               </ul>
             </div>

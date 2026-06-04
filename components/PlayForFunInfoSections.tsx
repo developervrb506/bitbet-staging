@@ -5,7 +5,7 @@ import CasinoCollage from "./CasinoCollage";
 export default function PlayForFunInfoSections() {
   return (
     <section className="relative w-full py-16 md:py-32 overflow-hidden">
-      <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 flex flex-col gap-16 md:gap-32">
+      <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 flex flex-col gap-10 lg:gap-32">
         {/* Top Header and Cards */}
         <div className="flex flex-col items-center">
           <h2 className="text-3xl md:text-[46px] font-bold font-sora text-white mb-12 md:mb-16 text-center tracking-wide">
@@ -13,7 +13,7 @@ export default function PlayForFunInfoSections() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full ">
             {/* Card 1 */}
-            <div className="flex flex-col bg-[linear-gradient(180deg,rgba(235,99,49,0.1)_39.02%,rgba(235,99,49,0)_100%)] rounded-[30px] p-8 md:p-10 border border-white/5 shadow-2xl">
+            <div className="flex flex-col bg-[linear-gradient(180deg,rgba(235,99,49,0.1)_39.02%,rgba(235,99,49,0)_100%)] rounded-[30px] p-8 lg:p-10 border border-white/5 shadow-2xl">
               <div className="w-full h-[250px] relative mb-8">
                 <Image
                   src="/playforfunone.png"
@@ -22,10 +22,8 @@ export default function PlayForFunInfoSections() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-bold font-sora text-white mb-7 leading-tight">
-                Play for Fun at BitBet
-                <br />
-                Online Casino
+              <h3 className="text-2xl font-bold font-sora text-white mb-7 leading-tight max-w-[290px]">
+                Play for Fun at BitBet Online Casino
               </h3>
               <p className="text-white/80 font-sora text-base leading-relaxed">
                 Welcome to the captivating world of online casino gaming, where
@@ -39,7 +37,7 @@ export default function PlayForFunInfoSections() {
             </div>
 
             {/* Card 2 */}
-            <div className="flex flex-col bg-[linear-gradient(180deg,rgba(235,99,49,0.1)_39.02%,rgba(235,99,49,0)_100%)] rounded-[30px] p-8 md:p-10 border border-white/5 shadow-2xl">
+            <div className="flex flex-col bg-[linear-gradient(180deg,rgba(235,99,49,0.1)_39.02%,rgba(235,99,49,0)_100%)] rounded-[30px] p-8 lg:p-10 border border-white/5 shadow-2xl">
               <div className="w-full h-[250px] relative mb-8">
                 <Image
                   src="/playforfuntwo.png"
@@ -48,10 +46,8 @@ export default function PlayForFunInfoSections() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-2xl font-bold font-sora text-white mb-7 leading-tight">
-                The Thrill of Online
-                <br />
-                Casino Games
+              <h3 className="text-2xl font-bold font-sora text-white mb-7 leading-tight max-w-[290px]">
+                The Thrill of Online Casino Games
               </h3>
               <p className="text-white/80 font-sora text-base leading-relaxed">
                 Step into the exhilarating world of online casino games, where
@@ -68,13 +64,11 @@ export default function PlayForFunInfoSections() {
         {/* Grouped Sections: Embracing & Journey (Images Collide) */}
         <div className="flex flex-col w-full">
           {/* Section: Embracing Cryptocurrency */}
-          <div className="flex flex-col md:flex-row items-center w-full">
-            <div className="w-full md:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 md:pr-16 lg:pr-24 relative py-10 md:py-0">
+          <div className="flex flex-col lg:flex-row items-center w-full">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 md:pr-16 lg:pr-24 relative py-10 md:py-0">
               <div className="hidden md:block absolute right-0 top-1/2 w-12 lg:w-16 h-px bg-white/20"></div>
-              <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2">
-                Embracing Cryptocurrency in
-                <br />
-                the Gaming World
+              <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2 max-w-full lg:max-w-[460px]">
+                Embracing Cryptocurrency in the Gaming World
               </h2>
               <p>
                 In today&apos;s digital age, the gaming world is undergoing a
@@ -93,7 +87,7 @@ export default function PlayForFunInfoSections() {
                 transactions are secure and free from third-party interference.
               </p>
             </div>
-            <div className="w-full md:w-1/2  overflow-hidden shadow-xl">
+            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl">
               <Image
                 src="/cryptocurrency.png"
                 alt="Embracing Cryptocurrency in the Gaming World"
@@ -104,13 +98,11 @@ export default function PlayForFunInfoSections() {
           </div>
 
           {/* Section: Journey into the World of Crypto Games */}
-          <div className="flex flex-col md:flex-row-reverse items-center w-full">
-            <div className="w-full md:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 md:pl-16 lg:pl-24 relative py-10 md:py-0">
+          <div className="flex flex-col lg:flex-row-reverse items-center w-full">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 lg:pl-16 relative py-10 md:py-0">
               <div className="hidden md:block absolute left-0 top-1/2 w-12 lg:w-16 h-px bg-white/20"></div>
-              <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2">
-                Journey into the World
-                <br />
-                of Crypto Games
+              <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2 max-w-full lg:max-w-[435px]">
+                Journey into the World of Crypto Games
               </h2>
               <p>
                 Embarking on a journey into crypto games is akin to stepping
@@ -122,7 +114,7 @@ export default function PlayForFunInfoSections() {
                 possibilities offered by blockchain technology.
               </p>
             </div>
-            <div className="w-full md:w-1/2  overflow-hidden shadow-xl">
+            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl">
               <Image
                 src="/cryptogames.png"
                 alt="Journey into the World of Crypto Games"
@@ -134,16 +126,10 @@ export default function PlayForFunInfoSections() {
         </div>
 
         {/* Section: Unleashing the Excitement of Online American Roulette */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full pt-16">
-          <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 md:pr-10 relative z-40">
-            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2">
-              Unleashing the
-              <br />
-              Excitement
-              <br />
-              of Online American
-              <br />
-              Roulette
+        <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20 w-full pt-10 md:pt-16">
+          <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 lg:pr-10 relative z-40">
+            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2 max-w-[479px]">
+              Unleashing the Excitement of Online American Roulette
             </h2>
             <p className="text-white/80">
               Prepare to be captivated by the timeless allure of Online American
@@ -167,12 +153,10 @@ export default function PlayForFunInfoSections() {
         </div>
 
         {/* Section: A Beginner's Guide to Online Baccarat */}
-        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20 w-full  pt-36">
+        <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20 w-full pt-10 md:pt-36">
           <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 md:pl-10 relative z-40">
-            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2">
-              A Beginner&apos;s Guide
-              <br />
-              to Online Baccarat
+            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2 max-w-[356px]">
+              A Beginner&apos;s Guide to Online Baccarat
             </h2>
             <p className="text-white/80">
               Prepare to immerse yourself in the world of elegance and
