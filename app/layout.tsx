@@ -23,11 +23,6 @@ export const metadata: Metadata = {
   title: "Bitbet — The Best Crypto Casino",
   description:
     "The premier online crypto casino. Play blackjack, roulette, slots, and more with Bitcoin. Enjoy live odds, fast payouts, and a top-tier betting experience.",
-  icons: {
-    icon: "/bitbet.svg",
-    shortcut: "/bitbet.svg",
-    apple: "/bitbet.svg",
-  },
   keywords: [
     "crypto casino",
     "bitcoin casino",

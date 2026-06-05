@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutSection() {
   return (
-    <section className="relative w-full bg-black py-20 lg:py-32 overflow-hidden">
+    <section className="relative w-full bg-black py-10 md:py-20 lg:py-32 overflow-hidden">
       <div
         className="absolute w-[151.69px] h-[883.27px] bg-[#EB6331] blur-[175px] pointer-events-none z-0"
         style={{
@@ -84,7 +84,7 @@ export default function AboutSection() {
           </div>
 
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:static">
-            <div className="relative lg:absolute lg:right-[-10vw] xl:right-[-15vw] lg:top-1/2 lg:-translate-y-1/2 w-full lg:w-[60vw] max-w-[600px] lg:max-w-[900px] aspect-4/3 z-0 pointer-events-none">
+            <div className="relative md:absolute lg:right-[-10vw] md:right-[-15vw] lg:top-1/2 lg:-translate-y-1/2 w-full lg:w-[60vw] max-w-[600px] lg:max-w-[900px] aspect-4/3 z-0 pointer-events-none">
               <Image
                 src="/pokerbg.png"
                 alt="Roulette and Dice"

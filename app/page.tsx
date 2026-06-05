@@ -38,6 +38,7 @@ export default function HomePage() {
           title={<>Lorem ipsum dolor amet consectetur.</>}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non mauris sit amet nisl interdum vestibulum iaculis mattis arcu. Cras imperdiet ipsum at metus varius"
           buttonText="Join Now"
+          priority={true}
         />
         <PlaySections />
         <InfoSection />

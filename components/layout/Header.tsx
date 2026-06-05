@@ -22,7 +22,7 @@ export default function Header() {
                 width={156}
                 height={60}
                 className="w-auto h-auto"
-                priority
+                style={{ width: 'auto', height: 'auto' }}
                 unoptimized
               />
             </Link>

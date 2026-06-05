@@ -6,7 +6,7 @@ import CheckmarkListItem from "./CheckmarkListItem";
 
 export default function CasinoPromotionsSections() {
   return (
-    <section className="relative w-full  py-20 lg:py-36 overflow-hidden bg-black">
+    <section className="relative w-full  py-10 md:py-20 lg:py-32 overflow-hidden bg-black">
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8  space-y-24">
         <DecorativeEllipse left="-247px" top="10%" />
 
@@ -19,7 +19,7 @@ export default function CasinoPromotionsSections() {
             backdropFilter: "blur(11.2993px)",
           }}
         >
-          <h2 className="text-3xl lg:text-5xl font-bold text-white font-sora  leading-tight max-w-[480px]">
+          <h2 className="text-3xl lg:text-5xl font-bold text-white font-sora  leading-tight max-w-full lg:max-w-[480px]">
             NFL Weekly Casino Blackjack Tournament
           </h2>
 
@@ -43,7 +43,7 @@ export default function CasinoPromotionsSections() {
         {/* General Rules Section */}
         <div className="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-            <div className=" w-full ">
+            <div className=" w-full relative">
               <Image
                 src="/aboutcombo.png"
                 alt="Casino players and games"
@@ -53,7 +53,7 @@ export default function CasinoPromotionsSections() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 py-10 md:py-32">
+          <div className="w-full lg:w-1/2 py-10 lg:py-32">
             <h3 className="text-[26px] font-bold text-white font-sora mb-8">
               General Rules:
             </h3>
@@ -109,7 +109,7 @@ export default function CasinoPromotionsSections() {
             ].map((item, idx) => (
               <div
                 key={idx}
-                className={`${idx === 1 && "mt-14"} h-fit rounded-[15px] p-8 lg:p-10 flex flex-col relative`}
+                className={`${idx === 1 && "mt-0 lg:mt-14"} h-fit rounded-[15px] p-8 lg:p-10 flex flex-col relative`}
                 style={{
                   background:
                     "radial-gradient(50% 100% at 50% 0%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.03) 100%)",
@@ -136,8 +136,8 @@ export default function CasinoPromotionsSections() {
         </div>
 
         {/* Online Gambling Promotions Section */}
-        <div className="flex flex-col pt-0 md:pt-24 pb-12">
-          <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-16 text-center leading-tight">
+        <div className="flex flex-col pt-0 lg:pt-24 pb-0 lg:pb-12">
+          <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-16 text-center leading-tight max-w-full lg:max-w-[646px] lg:mx-auto">
             Online gambling promotions at bitbet.com
           </h2>
 
@@ -145,7 +145,7 @@ export default function CasinoPromotionsSections() {
             {/* Top part */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className=" w-full  ">
+                <div className=" w-full relative">
                   <Image
                     src="/gambling.png"
                     alt="Gambling Promotions"
@@ -219,7 +219,7 @@ export default function CasinoPromotionsSections() {
                 </div>
               </div>
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className="w-full">
+                <div className="w-full relative">
                   <Image
                     src="/sevenpoker.png"
                     alt="Casino Poker and Slots"
@@ -233,7 +233,7 @@ export default function CasinoPromotionsSections() {
             {/* Bottom part */}
             <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
               <div className="w-full lg:w-1/2 flex justify-center">
-                <div className="w-full">
+                <div className="w-full relative">
                   <Image
                     src="/wheel.png"
                     alt="Casino Wheel"
@@ -276,8 +276,8 @@ export default function CasinoPromotionsSections() {
           </div>
         </div>
 
-        <div className="pb-12 lg:pb-24">
-          <div className="bg-[#EB6331] rounded-[32px] lg:rounded-l-[180px] lg:rounded-tr-[20px] lg:rounded-br-[20px] p-8 md:p-12 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-28">
+        <div className="pb-0 lg:pb-24">
+          <div className="bg-[#EB6331] rounded-[32px] lg:rounded-l-[180px] lg:rounded-tr-[20px] lg:rounded-br-[20px] p-5 md:p-7 lg:p-4 lg:pr-16 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-28">
             <div className="relative w-[200px] h-[200px] lg:w-[320px] lg:h-[320px] rounded-full bg-[#D9D9D9] p-7 shrink-0 flex items-center justify-center">
               <div className="relative h-full w-full">
                 <Image
@@ -289,7 +289,7 @@ export default function CasinoPromotionsSections() {
               </div>
             </div>
             <div className="flex-1 text-center lg:text-left py-4 lg:py-0">
-              <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-6 leading-tight max-w-[600px]">
+              <h2 className="text-3xl lg:text-[46px] font-bold text-white font-sora mb-6 leading-tight max-w-[600px] mx-auto lg:mx-0">
                 Claiming Your Gambling Promotions
               </h2>
               <p className="text-white/90 font-sora text-sm lg:text-[15px] leading-relaxed max-w-[700px]">

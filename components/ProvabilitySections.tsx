@@ -23,12 +23,12 @@ const howItWorksCards = [
 export default function ProvabilitySections() {
   return (
     <>
-      <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
+      <section className="relative w-full bg-black py-10 md:py-20 lg:py-32 text-white overflow-hidden md:overflow-visible">
         {/* Background Gradient */}
         <div className="absolute bottom-0 left-0 w-full h-[500px] bg-linear-to-b from-[#EB6331]/0 to-[#EB6331] opacity-10 pointer-events-none z-0" />
         <DecorativeEllipse left="-247px" top="10%" />
 
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-24 md:space-y-32 relative z-10">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-16 md:space-y-32 relative z-10">
           <ImageTextSection
             imageSrc="/provability.png"
             imageAlt="Provable Fairness Explanation"

@@ -37,18 +37,18 @@ const timelineSteps = [
 export default function HowToBuyBitcoinSections() {
   return (
     <>
-      <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
+      <section className="relative w-full bg-black py-10 md:py-20 lg:py-32 text-white overflow-hidden md:overflow-visible">
         {/* Background Gradient */}
 
         <DecorativeEllipse left="-247px" top="10%" />
 
         {/* Video Section */}
-        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 relative z-10 pt-8 pb-16 text-center">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 relative z-10  pb-16 text-center">
           <h2 className="text-3xl md:text-[46px] font-bold text-white font-sora leading-tight mb-12">
             How to buy bitcoin online?
           </h2>
 
-          <div className=" w-full   mb-12 rounded-[20px] overflow-hidden">
+          <div className=" w-full relative mb-12 rounded-[20px] overflow-hidden">
             <Image
               src="/buybitcoin.png"
               alt="How to buy bitcoin online"
@@ -72,7 +72,7 @@ export default function HowToBuyBitcoinSections() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             {/* Left Image */}
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
-              <div className="w-full">
+              <div className="w-full relative">
                 <Image
                   src="/aboutcombo.png"
                   alt="Casino promotions collage"
@@ -84,7 +84,7 @@ export default function HowToBuyBitcoinSections() {
 
             {/* Right Text */}
             <div className="flex-1 w-full">
-              <h2 className="text-3xl max-w-[534px] md:text-[46px] font-bold text-white font-sora leading-tight mb-10">
+              <h2 className="text-3xl max-w-full lg:max-w-[534px] md:text-[46px] font-bold text-white font-sora leading-tight mb-10">
                 Benefits of Using Bitcoin in Online Casinos
               </h2>
 

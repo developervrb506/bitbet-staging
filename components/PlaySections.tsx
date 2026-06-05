@@ -31,7 +31,7 @@ const timeToPlayImages = [
 /* Rectangle 2 */
 export default function PlaySections() {
   return (
-    <section className="relative w-full py-16 md:py-32 overflow-hidden">
+    <section className="relative w-full py-10  md:py-20 lg:py-32 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
         <div className=" mb-20">
           <h2 className="text-[46px] font-bold text-white mb-7 text-center font-sora tracking-wide">

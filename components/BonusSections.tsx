@@ -3,16 +3,16 @@ import CheckmarkListItem from "./CheckmarkListItem";
 
 export default function BonusSections() {
   return (
-    <section className="relative w-full bg-black py-16 md:py-32 text-white overflow-hidden md:overflow-visible">
+    <section className="relative w-full bg-black py-10 md:py-20 lg:py-32 text-white overflow-hidden md:overflow-visible">
       {/* Background Gradient Ellipse 7 */}
       <div
         className="absolute w-[151.69px] h-[883.27px] left-[-200px] top-0 bg-[#EB6331] blur-[175px] pointer-events-none z-0"
         style={{ transform: "matrix(-0.77, 0.64, 0.64, 0.77, 0, 0)" }}
       />
 
-      <div className=" mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8  space-y-24 md:space-y-32 relative z-10">
+      <div className=" mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8  space-y-16 md:space-y-32 relative z-10">
         {/* Section 1: Online Casino Terms */}
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full mb-16">
             <div className="w-full lg:w-1/2">
               <h2 className="text-3xl md:text-[46px] font-bold font-sora leading-10 md:leading-14 max-w-full lg:max-w-[420px]">
@@ -70,7 +70,7 @@ export default function BonusSections() {
               ))}
             </ul>
           </div>
-          <div className="w-full ">
+          <div className="w-full relative">
             <Image
               src="/bonusexamples.png"
               alt="Bonus Examples"
@@ -109,7 +109,7 @@ export default function BonusSections() {
               accounts.
             </p>
           </div>
-          <div className="w-full lg:w-1/2 ">
+          <div className="w-full lg:w-1/2 relative">
             <Image
               src="/contribution.png"
               alt="Wagering Contribution"

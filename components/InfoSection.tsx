@@ -3,12 +3,12 @@ import CasinoCollage from "./CasinoCollage";
 
 export default function InfoSection() {
   return (
-    <section className="relative w-full py-16 md:py-32 overflow-hidden">
+    <section className="relative w-full py-10 md:py-20 lg:py-32 overflow-hidden">
       <div className="absolute pointer-events-none z-0 w-[1920px] h-[688px] left-1/2 -translate-x-1/2 top-0 bg-linear-to-b from-[#F39120] to-transparent opacity-[0.15]" />
       <div className="absolute left-[-20%] top-[60%] -translate-y-1/2 w-[500px] h-[500px] bg-[#EB6331] blur-[250px] transform-[matrix(1,0,0,-1,0,0)] rounded-full pointer-events-none" />
 
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8">
-        <div className="mb-20 md:mb-40">
+        <div className="mb-10 md:mb-20 lg:mb-40">
           <h2 className="text-3xl md:text-[46px] font-bold text-white text-center font-sora leading-tight tracking-wide max-w-[1000px] mx-auto mb-12">
             Place Your Online Bitcoin{" "}
             <span className="inline-block align-middle mx-2">

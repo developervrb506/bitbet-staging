@@ -4,7 +4,7 @@ import CasinoCollage from "./CasinoCollage";
 
 export default function PlayForFunInfoSections() {
   return (
-    <section className="relative w-full py-16 md:py-32 overflow-hidden">
+    <section className="relative w-full py-10 md:py-20 lg:py-32 overflow-hidden">
       <div className="relative z-10 mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 flex flex-col gap-10 lg:gap-32">
         {/* Top Header and Cards */}
         <div className="flex flex-col items-center">
@@ -65,7 +65,7 @@ export default function PlayForFunInfoSections() {
         <div className="flex flex-col w-full">
           {/* Section: Embracing Cryptocurrency */}
           <div className="flex flex-col lg:flex-row items-center w-full">
-            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 md:pr-16 lg:pr-24 relative py-10 md:py-0">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 xl:pl-16  md:pr-0 lg:pr-16 relative pb-10 xl:pb-0">
               <div className="hidden md:block absolute right-0 top-1/2 w-12 lg:w-16 h-px bg-white/20"></div>
               <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2 max-w-full lg:max-w-[460px]">
                 Embracing Cryptocurrency in the Gaming World
@@ -87,7 +87,7 @@ export default function PlayForFunInfoSections() {
                 transactions are secure and free from third-party interference.
               </p>
             </div>
-            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl">
+            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl relative">
               <Image
                 src="/cryptocurrency.png"
                 alt="Embracing Cryptocurrency in the Gaming World"
@@ -99,7 +99,7 @@ export default function PlayForFunInfoSections() {
 
           {/* Section: Journey into the World of Crypto Games */}
           <div className="flex flex-col lg:flex-row-reverse items-center w-full">
-            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 lg:pl-16 relative py-10 md:py-0">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 lg:pl-16 relative py-10 lg:py-0">
               <div className="hidden md:block absolute left-0 top-1/2 w-12 lg:w-16 h-px bg-white/20"></div>
               <h2 className="text-2xl md:text-3xl font-bold font-sora leading-8 text-white mb-2 max-w-full lg:max-w-[435px]">
                 Journey into the World of Crypto Games
@@ -114,7 +114,7 @@ export default function PlayForFunInfoSections() {
                 possibilities offered by blockchain technology.
               </p>
             </div>
-            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl">
+            <div className="w-full lg:w-1/2  overflow-hidden shadow-xl relative">
               <Image
                 src="/cryptogames.png"
                 alt="Journey into the World of Crypto Games"
@@ -126,7 +126,7 @@ export default function PlayForFunInfoSections() {
         </div>
 
         {/* Section: Unleashing the Excitement of Online American Roulette */}
-        <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20 w-full pt-10 md:pt-16">
+        <div className="flex flex-col md:flex-row items-center gap-10 lg:gap-20 w-full pt-0 lg:pt-16">
           <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pr-0 lg:pr-10 relative z-40">
             <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2 max-w-[479px]">
               Unleashing the Excitement of Online American Roulette
@@ -154,8 +154,8 @@ export default function PlayForFunInfoSections() {
 
         {/* Section: A Beginner's Guide to Online Baccarat */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-10 lg:gap-20 w-full pt-10 md:pt-36">
-          <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 md:pl-10 relative z-40">
-            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2 max-w-[356px]">
+          <div className="flex-1 flex flex-col gap-6 text-white/70 font-sora text-sm md:text-base leading-relaxed pl-0 lg:pl-10 relative z-40">
+            <h2 className="text-2xl md:text-4xl font-bold font-sora leading-snug text-white mb-2 max-w-full lg:max-w-[356px]">
               A Beginner&apos;s Guide to Online Baccarat
             </h2>
             <p className="text-white/80">

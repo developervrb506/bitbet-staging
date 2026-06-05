@@ -23,7 +23,7 @@ export default function ImageTextSection({
           imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row"
         }`}
       >
-        <div className="w-full lg:w-1/2  overflow-hidden">
+        <div className="w-full lg:w-1/2  overflow-hidden relative">
           <Image
             src={imageSrc}
             alt={imageAlt}
