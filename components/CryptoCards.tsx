@@ -39,7 +39,7 @@ const cryptoData = [
   },
   {
     name: "ETHEREUM",
-    icon: "/ethereum.svg",
+    icon: "/Ethereum.svg",
     description:
       "Ethereum is an open-source, public, blockchain-based distributed computing platform and operating system featuring smart contract (scripting) functionality.",
     marketValue: "1 = USD",
